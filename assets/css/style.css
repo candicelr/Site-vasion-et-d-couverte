@@ -92,6 +92,9 @@ a {
     width: 100%;
     height: auto;
 }
+@media screen and (min-width:660px) {
+    
+}
 
 
 /* fin partie de jules */
@@ -298,7 +301,7 @@ main h2 {
     font-size: 20px;
     margin-bottom: 50px;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,7 +516,7 @@ footer h2 {
 #bloc1 div,
 #bloc2 div {
     display: flex;
-    width: 600px;
+    width: 300px;
     margin-bottom: 5%;
 }
 
