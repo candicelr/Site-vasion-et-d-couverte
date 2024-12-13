@@ -1,0 +1,785 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* pour enlever le soulignement des liens */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2f2f2f;
+}
+
+/*debut partie de jules */
+/* Sidenav menu */
+#nav {
+    background-color: #709791;
+    height: 77px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 4px 3px 2px #2F2F2F;
+}
+
+#toggler {
+    margin: 25px;
+}
+
+#c {
+    margin: 15px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    /* Le menu est caché à droite */
+    background-color: #709791;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+    /* Transition de droite */
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2F2F2F;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+    /* Le menu s'ouvre vers la droite */
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    /* Toujours à droite */
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+#la{
+    width: 100%;
+    height: auto;
+}
+
+
+/* fin partie de jules */
+/*debut partie de baptiste */
+
+#estimate h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* On délimite la section avec la couleur et en alignant tout au centre */
+#estimate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #709791;
+    gap: 30px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* On fait une marge pour que tout soit centré */
+#estimate input {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 1%;
+    background-color: #E7C79B;
+    border: none;
+}
+
+/* Pareil ici */
+#estimate label {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: -20px;
+}
+
+/* Pareil ici */
+#estimate select {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #E7C79B;
+    padding: 1%;
+}
+
+/* Pareil ici */
+#estimate button {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #E7C79B;
+    border: none;
+    padding: 1%;
+}
+
+/* On centre le bouton */
+#estimate button {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* Pareil pour le titre */
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+/*fin partie de baptiste */
+/* debut partie de candice */
+/*Importation des polices*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+p {
+    font-family: "Open Sans", serif;
+}
+
+a {
+    font-family: "Open Sans", serif;
+}
+
+/* pour enlever le soulignement des liens */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2F2F2F;
+}
+
+/*Définition de la couleur d'arrière plan de la page.*/
+body {
+    background-color: #F7F4E9;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    /* width: 350px; */
+}
+
+/*On cache les photos du carroussel.*/
+.slider {
+    display: none;
+}
+
+/*Définition de la taille , et ajout d'un border radius sur les images de la section destinations.*/
+#destinations img {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+/*Placement des destinations les unes en dessous des autres, centrées dans l'axe vertical et horizontal. Puis ajout d'une marge externe en haut et en bas de la section destinations.*/
+#destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/*Placement des noms de destinations et des descriptions.*/
+#destinations .text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ajout d'une marge interne sur la description*/
+#destinations .text1 p:nth-child(2) {
+    padding-left: 10px;
+}
+
+/*Ajout d'une marge interne et externe sur le deuxième paragraphe du deuxième bloc de texte.*/
+#destinations .text2 p:nth-child(2) {
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+/*Placement des deuxièmes blocs de texte de la section destinations.*/
+#destinations .text2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.text1 p:first-child {
+    margin-bottom: 10px;
+}
+
+div:first-child .text1 p:last-child {
+    margin-bottom: 15px;
+}
+
+/*Ajout d'une marge externe en haut et à gauche du dernier paragraphe du deuxième bloc de texte.*/
+.text2 p:last-child {
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+/*Définition de la couleur de fond, de la largeur, de la marge externe en bas et ajout d'un border radius et d'un effet d'ombre sur les cards de la section destinations.*/
+#destinations .card {
+    background-color: #709791;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px gray;
+    margin-bottom: 50px;
+}
+
+/*Défintion du style du titre de premier niveau.*/
+h1 {
+    background-color: #e7c79b;
+    color: #0c5655;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    box-shadow: 2px 4px 4px gray;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Définition du style de deuxième niveau.*/
+main h2 {
+    background-color: #e7c79b;
+    color: #0c5655;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    box-shadow: 2px 4px 4px gray;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Définition du style du premier bloc de la section témoignages.*/
+#notice div {
+    background-color: #e7c79b;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+/*Ajout d'une ombre en dessous du deuxième bloc de la section témoignages.*/
+#notice div:nth-child(2) {
+    box-shadow: 2px 4px 4px gray;
+}
+
+/*Ajout d'une ombre en dessous du troisième bloc de la section témoignages.*/
+#notice div:nth-child(3) {
+    box-shadow: 2px 4px 4px gray;
+}
+
+/*Ajout d'une ombre en dessous du dernier bloc de la section témoignages.*/
+#notice div:last-child {
+    box-shadow: 2px 4px 4px gray;
+}
+
+/*Placement de la section notice au centre de la page en colomne.*/
+#notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Placement de la photo de profil et du nom,prénom du bloc catherine à coté.*/
+#catherine {
+    display: flex;
+}
+
+/*Ajout d'une marge interne en haut du nom et prénom.*/
+#catherine p {
+    padding-top: 10px;
+}
+
+/*Ajout d'une marge externe à droite des photos de profil de la section témoignages.*/
+#notice img {
+    margin-top: -60px;
+    margin-right: 8px;
+    margin-bottom: -50px;
+}
+
+/*Ajout d'une marge externe sur le troisième paragraphe de la section témoignages clients.*/
+#notice p:nth-child(3) {
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
+/*Ajout d'une marge externe sur les images notes de la section témoignages clients.*/
+#notice img[alt="note"] {
+    margin-bottom: 40px;
+}
+
+#notice p:nth-child(4) {
+    margin-bottom: 15px;
+}
+
+#notice p:last-child {
+    margin-bottom: 15px;
+}
+
+/*Placement de la photo de profil et du nom,prénom du bloc jeanne à coté.*/
+#jeanne {
+    display: flex;
+}
+
+/*Ajout d'une marge interne en haut du nom et prénom.*/
+#jeanne p {
+    padding-top: 10px;
+}
+
+/*Placement de la photo de profil et du nom,prénom du bloc thibault à coté.*/
+#thibault {
+    display: flex;
+}
+
+/*Ajout d'une marge interne en haut du nom et prénom.*/
+#thibault p {
+    padding-top: 10px;
+}
+
+/*Placement du dernier paragraphe des blocs de la section témoignages en bas à droite avec une marge interne de 5px.*/
+#notice div:nth-child(2) p:nth-child(5) {
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+}
+
+#notice div:nth-child(3) p:nth-child(5) {
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+}
+
+#notice div:last-child p:nth-child(5) {
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+}
+
+/*Placement de la section galerie photo au centre de la page en colomne.*/
+#photoGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Ajout d'une marge externe en bas du titre de niveau deux de la section galerie photo.*/
+#photoGallery h2 {
+    margin-bottom: 50px;
+}
+
+/*Définition de la grille pour la galerie photo. La grille comporte 1 colomne,6 lignes et des goutières de 15px.*/
+#photoGallery div {
+    display: grid;
+    gap: 15px;
+    margin-top: 50px;
+    justify-content: center;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "imgOne"
+        "imgTwo"
+        "imgThree"
+        "imgFour"
+        "imgFive"
+        "imgSix";
+}
+
+/*Précision des zones attribuées à chaque image.*/
+#photoGallery div:nth-child(1) {
+    grid-area: imgOne;
+}
+
+#photoGallery div:nth-child(2) {
+    grid-area: imgTwo;
+}
+
+#photoGallery div:nth-child(3) {
+    grid-area: imgThree;
+}
+
+#photoGallery div img:nth-child(4) {
+    grid-area: imgFour;
+}
+
+#photoGallery div img:nth-child(5) {
+    grid-area: imgFive;
+}
+
+#photoGallery div img:nth-child(6) {
+    grid-area: imgSix;
+}
+
+/*fin partie de candice */
+/* debut de partie de maud */
+
+
+
+
+/* pour définir la couleur du footer */
+footer {
+    background-color: #709791;
+}
+
+#joindre {
+    margin-left: 6%;
+}
+
+/* pour le titre dans le footer association de la couleur centrage et taille */
+footer h2 {
+    display: flex;
+    justify-content: center;
+    color: #2f2f2f;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* pour définir la taille des pictos de contact*/
+#joindre img {
+    margin-right: 3%;
+    height: 3vh;
+    width: 4vh;
+}
+
+/* pour aligner les éléments texte et picto et les placer */
+
+#bloc1,
+#bloc2 {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+#bloc1 div,
+#bloc2 div {
+    display: flex;
+    width: 600px;
+    margin-bottom: 5%;
+}
+
+/* pour placer les réseaux sociaux */
+#socialpicto {
+    margin-left: 25%;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+/* pour définir la taille des picto réseaux sociaux */
+#socialpicto img {
+    height: 5vh;
+    width: 5vh;
+    padding-left: 1%;
+    margin-bottom: 10%;
+    margin-top: 8%;
+}
+
+/* pour le paragraphe "suivez-nous" */
+#socialpicto p {
+    margin-left: 5%;
+}
+
+/* pour les mentions légales */
+#legal {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+
+/* fin de partie de maud */
+@media screen and (min-width: 1024px) {
+
+    /*debut partie de jules */
+    #nav {
+        background-color: #709791;
+        height: 111px;
+        width: 100vw;
+        justify-content: space-around;
+        position: fixed;
+
+    }
+
+    #toggler {
+        display: none;
+    }
+
+    .sidenav {
+        display: contents;
+    }
+
+    #closeBtn {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+
+    }
+
+    #la {
+
+        width: 100%;
+    }
+
+    #c {
+        height: 70px;
+        width: 214px;
+    }
+
+    .sidenav a:hover {
+        color: #F7F4E9;
+
+    }
+
+
+    /* fin partie de jules */
+    /*debut partie de baptiste */
+    /*On change le style du bouton au survol.*/
+    #estimate button:hover {
+        box-shadow: 0px 0px 2px 2px;
+        background-color: #F7F4E9;
+    }
+
+
+
+    #estimate label {
+        font-size: 20px;
+
+    }
+
+
+    /*fin partie de baptiste */
+    /* debut partie de candice */
+
+    /*Ajout d'un évenement au survol des cards pour qu'elles s'aggrandissent lorsqu'on les survole.*/
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    /*Placement des cards de la section destinations les unes à côté des autres et ajout d'une marge externe en bas.*/
+    #destinations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+
+    /*Code pour le carroussel: On deplace les images avec la propriété transform et la valeur translateX, et on défini un certain temps entre ces translations, défini par des pourcentages avant le bloc de transformation.*/
+    @keyframes slider-1 {
+
+        0%,
+        3% {
+            transform: translateX(0);
+        }
+
+        8%,
+        18% {
+            transform: translateX(-75%);
+        }
+
+        23%,
+        33% {
+            transform: translateX(-150%);
+        }
+
+        38%,
+        48% {
+            transform: translateX(-225%);
+        }
+
+        53%,
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+
+    /*On cache les images qui dépasse des cards et qui vont défilé ensuite avec l'animation précédente.*/
+    .card {
+        overflow: hidden;
+    }
+
+    /*On met l'animation en pause par défault.*/
+    .slider {
+        animation-play-state: paused;
+    }
+
+    /*On affiche l'animation au survol des cards.*/
+    .image:hover .slider {
+        animation: slider-1 12s infinite ease-in-out;
+    }
+
+    /*On défini la taille des images du carroussel et on les place horizontalement.*/
+    .image {
+        display: flex;
+        flex-direction: row;
+        width: 275px;
+        height: 210px;
+    }
+
+    /*Définition de la taille du slider, et ajout d'un flex-shrink pour éviter  l'élément de rétrécir lorsque l'espace est limité dans le conteneur flexible.*/
+    .slider {
+        flex-shrink: 0;
+        height: 210px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*Définition de la hauteur des images du carroussel.*/
+    .slider img {
+        height: 300px;
+    }
+
+
+
+    /*Définition de la grille pour la galerie photo. La grille comporte 3 colomnes,2 lignes et des goutières de 20px.*/
+    #photoGallery div {
+        object-fit: cover;
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 319px);
+        grid-template-rows: repeat(2, 249px);
+    }
+
+    /*Placement de la section galerie photo au centre de la page.*/
+    #photoGallery {
+        display: flex;
+        justify-content: center;
+    }
+
+    #photoGallery div img:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #photoGallery div img:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #photoGallery div img:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        width: 664px;
+        height: 517px;
+    }
+
+    #photoGallery div img:nth-child(4) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    #photoGallery div img:nth-child(5) {
+        grid-column: 2/4;
+        grid-row: 3/5;
+        width: 664px;
+        height: 517px;
+    }
+
+    #photoGallery div img:nth-child(6) {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+
+
+    /*fin partie de candice */
+    /* debut de partie de maud */
+    /* pour placer les picto et texte de contact */
+    #bloc1,
+    #bloc2 {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    #contact {
+        display: flex;
+        align-items: center;
+
+    }
+
+    /* pour les picto réseaux sociaux */
+    #socialpicto {
+        margin-left: 20%;
+    }
+
+    #socialpicto div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+
+    /* poiur centrer les paragraphes avec les pictos */
+    #bloc1 p,
+    #bloc2 p,
+    #bloc1 a,
+    #bloc2 a {
+        margin-top: 2%;
+    }
+
+    /* fin de partie de maud */
+}
